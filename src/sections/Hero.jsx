@@ -1,8 +1,12 @@
 import HeroText from "../components/HeroText";
+import { Canvas } from "@react-three/fiber";
 import ParallaxBackground from "../components/ParallaxBackground";
 import { Astronaut } from "../components/Astronaut";
+import { OrbitControls } from "@react-three/drei";
+import { useMediaQuery } from "react-responsive";
 
 const Hero=()=>{
+    const isMobile=useMediaQuery({maxWidth:853});
     return <section className="flex items-start justify-center 
     md:items-start md:justify-start min-h-screen overflow-hidden
     c-space">
@@ -11,8 +15,9 @@ const Hero=()=>{
         <figure className="absolute inset-0" 
         style={{width: "100vw", height:"100vh"}}
         ></figure>
-        <Canvas>
-            <Astronaut />
+        <Canvas camera={{position: [0, 1, 3] }}>
+            <Astronaut scale={0.3} position={[0, -1.5, 0]}/>
+            <OrbitControls/>
         </Canvas>
     </section>
 }
