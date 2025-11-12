@@ -42,7 +42,7 @@ const About = () => {
                     <Card  style={{rotate: "-45deg", top: "50%", right: "6%"}}
                      image="assets/logos/dotnet-pink.png"/>
                     <Card  style={{rotate: "-15deg", bottom: "35%", left: "6%"}}
-                     image="assets/logos/blazer-pink.png"/>
+                     image="assets/logos/blazor-pink.png"/>
                 </div>
             </div>
             {/* grid 3 */}
