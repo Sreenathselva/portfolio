@@ -2,6 +2,7 @@ import Card from "../components/Card"
 import {useRef} from "react";
 import { Globe } from "../components/Globe";
 import CopyEmailButton from "../components/CopyEmailButton";
+import { Frameworks } from "../components/Frameworks";
 
 const About = () => {
     const containerRef = useRef(null);
@@ -95,9 +96,17 @@ const About = () => {
             </div>
             {/* grid 5 */}
             <div className="grid-default-color grid-5">
+              <div className="z-10 w-[50%]">
+                <p className="headtext">Tech Stack</p>
+                <p className="subtext">I specialize in a variety of languages, frameworks, and tool that
+                  allow me to build robust and scalable applications.
+                </p>
+              </div>
               <div className="absolute inset-y-0 md:inset-y-9 w-full
               h-full start-[50%]
-              md:scale-y-125"></div>
+              md:scale-y-125">
+                <Frameworks/>
+              </div>
             </div>
         </div>
     </section>
