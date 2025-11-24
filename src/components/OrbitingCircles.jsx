@@ -25,7 +25,7 @@ export function OrbitingCircles({
           className="pointer-events-none absolute inset-0 size-full"
         >
           <circle
-            className="stroke-black/10 stroke-1 dark:stroke-white/10"
+            className=" stroke-1 dark:stroke-white/10"
             cx="50%"
             cy="50%"
             r={radius}
@@ -47,8 +47,7 @@ export function OrbitingCircles({
             }
             className={twMerge(
               `animate-orbit absolute flex size-[var(--icon-size)] transform-gpu items-center
-               justify-center rounded-full ${reverse ?
-                "[animation-direction:reverse]"  :  ""  
+               justify-center rounded-full ${reverse ? "[animation-direction:reverse]"  :  ""  
                }`,
               className
             )}
